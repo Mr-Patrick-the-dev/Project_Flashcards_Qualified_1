@@ -45,7 +45,7 @@ export default function ShowDeck({ deck, url, history}) {
     //Call history to use later
     
     return (
-        <div>
+        <>
         <NavBar 
         navigation={navigation} />
         <h3>{name}</h3>
@@ -54,6 +54,6 @@ export default function ShowDeck({ deck, url, history}) {
         <button onClick={()=>history.push(`${url}study`)}>Study</button>
         <button onClick={()=>history.push(`${url}cards/new`)}>Add Cards</button>
         <button onClick={()=>(deleteHandler(id))}>Delete</button>
-        </div>
+        </>
     )
 };

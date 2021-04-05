@@ -11,13 +11,13 @@ export default function HomePage({ decks }) {
     //Check to see if decks is empty
     if (decks) {
         return (
-            <div>
+            <>
             <button
             type="button"
             onClick={() => history.push("/decks/new")}>Create Deck</button>
             <hr />
             <DeckDisplay decks={decks} />
-            </div>
+            </>
         )
     } else {
         //No decks

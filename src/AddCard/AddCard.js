@@ -11,7 +11,7 @@ export default function AddCards({ deckName, deckId }) {
     const navigation = {Home: "/", [deckName]: `/decks/${deckId}/`, "Add Card": " "};
 
     return (
-        <div>
+        <>
         <NavBar 
         navigation={navigation}/>
         
@@ -20,6 +20,6 @@ export default function AddCards({ deckName, deckId }) {
         <NewCardForm 
         deckId={deckId} 
         card={card} />
-        </div>
+        </>
     )
 }

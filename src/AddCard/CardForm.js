@@ -34,7 +34,7 @@ export default function NewCardForm({ deckId, card }) {
     }
 
     return (
-        <div>
+        <>
         <form onSubmit={()=>submitHandler(newCard, deckId)}>
             <label htmlFor="front">
             Front:
@@ -68,6 +68,6 @@ export default function NewCardForm({ deckId, card }) {
             <button type="submit">Submit</button>
             <button onClick={() => history.push("/")}>Cancel</button>
         </form>
-        </div>
+        </>
     )
 };

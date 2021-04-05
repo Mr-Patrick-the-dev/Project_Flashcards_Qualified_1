@@ -35,7 +35,7 @@ export default function DeckForm({ deck, deckFunction }) {
     }
 
     return (
-        <div>
+        <>
         <form onSubmit={() => submitHandler(newDeck)}>
             <label htmlFor="name">Name:</label>
             <br />
@@ -65,6 +65,6 @@ export default function DeckForm({ deck, deckFunction }) {
 
             <button onClick={() => history.push("/")}>Cancel</button>
         </form>
-        </div>
+        </>
     )
 };

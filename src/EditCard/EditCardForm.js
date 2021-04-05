@@ -33,7 +33,7 @@ export default function EditCardForm({ card, deckId }) {
     }
 
     return (
-        <div>
+        <>
         <form onSubmit={()=>submitHandler(newCard)}>
             <label htmlFor="front">
             Front:
@@ -59,6 +59,6 @@ export default function EditCardForm({ card, deckId }) {
             <button type="submit">Submit</button>
             <button onClick={() => history.push("/")}>Cancel</button>
         </form>
-        </div>
+        </>
     )
 };

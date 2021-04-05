@@ -50,6 +50,6 @@ export default function DeckDisplay({ decks }) {
 
     //Return the decks in a div; add card class later
     return (
-        <div>{decksDisplayed}</div>
+        <>{decksDisplayed}</>
     );
 };

@@ -12,7 +12,7 @@ export default function NotEnoughCards({ deckName, deckId, cardsLength }) {
 
 
     return (
-        <div>
+        <>
         <NavBar 
         navigation={navigation}/>
 
@@ -28,7 +28,7 @@ export default function NotEnoughCards({ deckName, deckId, cardsLength }) {
         <button onClick={() => history.push(`/decks/${deckId}/cards/new`)}>
             Add Cards
         </button>
-        </div>
+        </>
         
     )
 }

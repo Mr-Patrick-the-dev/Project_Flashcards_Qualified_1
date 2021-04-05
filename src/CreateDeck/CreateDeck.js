@@ -16,7 +16,7 @@ export default function CreateDeck() {
     const [deck, setDeck] = useState({name: "Enter a name", description: "Enter a description"});
     
     return (
-        <div>
+        <>
             <NavBar 
             navigation={navigation} />
 
@@ -24,6 +24,6 @@ export default function CreateDeck() {
 
             <DeckForm 
             deck={deck} /> 
-        </div>
+        </>
     )
 };

@@ -11,7 +11,7 @@ export default function EditDeck({ deck }) {
     //Create object for navbar
     const navigation = {Home: "/", [name]: `/decks/${id}/`, "Edit Deck": " "};
     return (
-    <div>
+    <>
         <NavBar 
         navigation={navigation} />
 
@@ -20,6 +20,6 @@ export default function EditDeck({ deck }) {
         <DeckForm 
         deck={deck} 
         deckFunction={updateDeck} />
-    </div>
+    </>
     )
 };

@@ -20,7 +20,7 @@ export default function StudyDeck({ deck }) {
         cardsLength={cards.length}/>
      } else {
         return (
-            <div>
+            <>
             <NavBar 
             navigation={navigation} />
 
@@ -28,7 +28,7 @@ export default function StudyDeck({ deck }) {
 
             <StudyCards
             cards={cards} />
-            </div>
+            </>
         )
     }
 };

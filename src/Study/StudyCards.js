@@ -47,20 +47,20 @@ export default function StudyCards({ cards }) {
             if(studyCard.side==="front") {
 
                 return (
-                    <div>
+                    <>
                         <h4>Card {studyCard.number} of {cards.length}</h4>
                         <p>{card.front}</p>
                         <button onClick={()=> 
                             setStudyCard({...studyCard, side: "back"})}>
                                 Flip
                         </button>
-                    </div>
+                    </>
                 );
             } else {
                 //Side = back
 
                 return (
-                    <div>
+                    <>
                         <h4>Card {studyCard.number} of {cards.length}</h4>
                         <p>{card.back}</p>
                         <button onClick={() =>
@@ -70,7 +70,7 @@ export default function StudyCards({ cards }) {
                         <button onClick={() =>nextCard()}>
                                 Next
                         </button>
-                    </div>
+                    </>
                 );
             };
         };

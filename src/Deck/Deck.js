@@ -66,7 +66,7 @@ export default function HostDeck({ decks }) {
     //Check that deck is not an empty value
     if(deck) {
         return (
-            <div>
+            <>
             <Switch>
                 <Route exact={true} path={url}>
                     <ShowDeck 
@@ -98,7 +98,7 @@ export default function HostDeck({ decks }) {
                     deckUrl={url}/>
                 </Route>
             </Switch>
-            </div>
+            </>
         );
     } else {
        return <h3>.....Loading deck and cards</h3>

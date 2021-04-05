@@ -48,7 +48,7 @@ export default function EditCard({ deckName }) {
     }, [cardId])
 
     return (
-        <div>
+        <>
             <NavBar 
             navigation={navigation} />
 
@@ -58,6 +58,6 @@ export default function EditCard({ deckName }) {
             card={card} 
             deckId={deckId} />
 
-        </div>
+        </>
     )
 }
